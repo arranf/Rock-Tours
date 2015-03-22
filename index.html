@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Rock-tours by arranf</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Rock-tours</h1>
+        <p>A set of &quot;site tours&quot; for the Rock CMS</p>
+
+        <p class="view"><a href="https://github.com/arranf/Rock-Tours">View the Project on GitHub <small>arranf/Rock-Tours</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/arranf/Rock-Tours/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/arranf/Rock-Tours/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/arranf/Rock-Tours">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a id="rock-bootstrap-tours" class="anchor" href="#rock-bootstrap-tours" aria-hidden="true"><span class="octicon octicon-link"></span></a>Rock Bootstrap Tours</h1>
+
+<p>Tours created specifically for <a href="http://rockrms.com">Rock</a> using <a href="http://bootstraptour.com">Bootstrap Tour</a>
+None of the source code for Bootstrap Tour is included here, only the .js and .css files necessary to use Bootstrap Tour with Rock.
+This repository is for the distribution of tours. </p>
+
+<h2>
+<a id="documentation" class="anchor" href="#documentation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Documentation</h2>
+
+<p><b>The current "release" (if you can call it that) only includes a single tour (for the default page of the Rock internal site.)</b></p>
+
+<h3>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h3>
+
+<ul>
+<li>Merge the Content folder from this project with the Content folder at the root of your Rock installation.</li>
+<li>The following line needs to be included in the header of the page you wish to run the tour on.</li>
+</ul>
+
+<div class="highlight highlight-html"><pre>&lt;<span class="pl-ent">link</span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>/Content/BootstrapTour/css/bootstrap-tour.min.css<span class="pl-pds">"</span></span> <span class="pl-e">rel</span>=<span class="pl-s"><span class="pl-pds">"</span>stylesheet<span class="pl-pds">"</span></span>&gt;</pre></div>
+
+<ul>
+<li>Attach the following code to a body element of the page for the default tour</li>
+</ul>
+
+<div class="highlight highlight-html"><pre>&lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>/Content/BootstrapTour/js/bootstrap-tour.min.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;
+&lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>/Content/BootstrapTour/js/default.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;</pre></div>
+
+<ul>
+<li>To prevent the tour from running every time the page is refreshed remove the <code>storage: false</code> flag from the <code>default.js</code> file.</li>
+<li>If you wish to edit the tour for your church context I recommend using <a href="http://jshint.com/">JSHint</a> to verify your tour JS. If you make any Rock specific changes to the CSS I'd encourage you to create a pull request.
+You can find more information about Bootstrap Tour usage <a href="http://bootstraptour.com/api/">here</a>. </li>
+</ul>
+
+<h2>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h2>
+
+<p>Code licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License v2.0</a>.
+Documentation licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/arranf">arranf</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
